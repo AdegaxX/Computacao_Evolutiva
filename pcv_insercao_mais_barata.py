@@ -27,9 +27,7 @@ def cheapest_insertion(distance_matrix):
             for i in range(len(tour) - 1):
                 a = tour[i]
                 b = tour[i + 1]
-                increase = (distance_matrix[a][city] +
-                            distance_matrix[city][b] -
-                            distance_matrix[a][b])
+                increase = (distance_matrix[a][city] + distance_matrix[city][b] - distance_matrix[a][b])
 
                 if increase < best_increase:
                     best_increase = increase
